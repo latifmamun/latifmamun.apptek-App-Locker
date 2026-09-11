@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for AppTek - App Locker. Learn how AppTek protects your data, PIN, and fingerprint information.">
+    <title>Privacy Policy | AppTek - App Locker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <div class="brand">
+            <span class="brand-icon">🔒</span>
+            <span class="brand-name">AppTek <span class="brand-sub">App Locker</span></span>
+        </div>
+        <nav class="site-nav">
+            <a href="#data-we-store">Your Data</a>
+            <a href="#permissions">Permissions</a>
+            <a href="#security">Security</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <h1>Privacy Policy</h1>
+        <p class="effective-date">Effective date: September 11, 2026</p>
+        <p class="hero-text">
+            AppTek - App Locker ("AppTek", "the App", "we") is built with a simple principle:
+            <strong>your private data should stay on your device — not on our servers.</strong>
+            AppTek works entirely offline. Your PIN, fingerprint settings, and locked-app list
+            never leave your phone.
+        </p>
+    </section>
+
+    <section id="overview" class="card">
+        <h2>1. Overview</h2>
+        <p>
+            AppTek - App Locker is an application-locking tool that protects your apps with a
+            PIN code and/or fingerprint authentication. This Privacy Policy explains what
+            information the App handles, where it is stored, and why the permissions the App
+            requests are necessary. By using AppTek, you agree to the practices described here.
+        </p>
+    </section>
+
+    <section id="data-we-store" class="card">
+        <h2>2. Information Stored on Your Device</h2>
+        <p>All information handled by AppTek is stored <strong>locally on your device only</strong>, using Android's private app storage. We do not collect, transmit, or back up any of it.</p>
+        <ul>
+            <li><strong>PIN code:</strong> Your PIN is never stored as plain text. It is converted into a SHA-256 hash before being saved, so even someone with access to the storage file cannot read your actual PIN.</li>
+            <li><strong>PIN lockout state:</strong> A counter and timestamp used to disable PIN entry for 5 minutes after 3 wrong attempts.</li>
+            <li><strong>Locked app list:</strong> The package names of the apps you choose to protect are saved so AppTek knows which apps to lock.</li>
+            <li><strong>Protection status:</strong> A simple on/off flag indicating whether the protection service is active.</li>
+        </ul>
+        <div class="notice">
+            <strong>We do not collect:</strong> names, email addresses, phone numbers, contacts,
+            location, browsing history, photos, messages, usage behavior analytics, advertising
+            identifiers, or any personally identifiable information.
+        </div>
+    </section>
+
+    <section id="what-we-dont-do" class="card">
+        <h2>3. What We Do <em>Not</em> Do</h2>
+        <ul>
+            <li>We do not operate any servers that receive your data.</li>
+            <li>We do not sell, rent, trade, or share any information with third parties.</li>
+            <li>We do not show third-party advertisements.</li>
+            <li>We do not use analytics or tracking SDKs.</li>
+            <li>We do not access the internet to function — the App works fully offline.</li>
+        </ul>
+    </section>
+
+    <section id="permissions" class="card">
+        <h2>4. Permissions We Use and Why</h2>
+        <div class="perm-item">
+            <h3>Usage Access (Usage Stats)</h3>
+            <p>Used to detect which app is currently in the foreground so AppTek can show the lock screen when a protected app is opened. AppTek reads only the foreground package name — no usage content, history details, or personal data.</p>
+        </div>
+        <div class="perm-item">
+            <h3>Accessibility Service</h3>
+            <p>Used to detect when a protected app is launched (for faster locking) and to guard the App's uninstall screen. AppTek observes window events and package names only. It never reads screen content beyond matching app names for its own lock/uninstall-guard purposes, and it never collects or transmits what it sees.</p>
+        </div>
+        <div class="perm-item">
+            <h3>Biometric / Fingerprint</h3>
+            <p>Used to let you unlock apps with your fingerprint. Your biometric data is stored exclusively by the Android operating system in the device's secure hardware (Keystore). AppTek never sees, stores, or processes your fingerprint — it only receives a yes/no result from the system.</p>
+        </div>
+        <div class="perm-item">
+            <h3>Foreground Service &amp; Notifications</h3>
+            <p>AppTek runs a foreground service so protection stays active. This requires a persistent low-priority notification, which you may see in your notification shade. It contains no personal data.</p>
+        </div>
+        <div class="perm-item">
+            <h3>Query Installed Apps</h3>
+            <p>Used only to let you pick which of your installed apps to lock, and to display their names and icons on the lock screen.</p>
+        </div>
+    </section>
+
+    <section id="security" class="card">
+        <h2>5. Data Security</h2>
+        <p>
+            Because all data is stored locally on your device, its safety depends on your
+            device's own security (screen lock, encryption, OS updates). We protect stored
+            secrets by hashing your PIN with SHA-256 and relying on Android's biometric
+            hardware for fingerprint authentication. We recommend keeping your device
+            up to date and enabling a device screen lock.
+        </p>
+    </section>
+
+    <section id="children" class="card">
+        <h2>6. Children's Privacy</h2>
+        <p>
+            AppTek does not knowingly collect any information from anyone, including children
+            under 13. Since the App collects no personal data at all, no children's information
+            is gathered, stored, or shared.
+        </p>
+    </section>
+
+    <section id="changes" class="card">
+        <h2>7. Changes to This Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time. Any changes will be posted on
+            this page with an updated effective date. We encourage you to review this page
+            periodically.
+        </p>
+    </section>
+
+    <section id="contact" class="card">
+        <h2>8. Contact Us</h2>
+        <p>
+            If you have questions or concerns about this Privacy Policy or AppTek's privacy
+            practices, contact us:
+        </p>
+        <ul>
+            <li>Email: <a href="mailto:support@apptek.app">support@apptek.app</a></li>
+            <li>Developer: Latif Mamun</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>🔒 AppTek - App Locker &copy; 2026. Your privacy stays on your device.</p>
+    </div>
+</footer>
+
+</body>
+</html>

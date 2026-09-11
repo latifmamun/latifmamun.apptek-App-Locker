@@ -1,0 +1,202 @@
+/* ============================================================
+   AppTek - App Locker | Privacy Policy Stylesheet
+   ============================================================ */
+
+:root {
+    --primary: #4a6cf7;
+    --primary-dark: #3b5de7;
+    --bg: #f4f6fb;
+    --card-bg: #ffffff;
+    --text: #2b2f3a;
+    --text-muted: #6b7280;
+    --border: #e5e9f2;
+    --accent-bg: #eef2ff;
+    --radius: 14px;
+    --shadow: 0 4px 20px rgba(43, 47, 58, 0.06);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: #fff;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(59, 93, 231, 0.25);
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.brand {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.brand-icon {
+    margin-right: 6px;
+}
+
+.brand-sub {
+    font-weight: 400;
+    opacity: 0.85;
+}
+
+.site-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.92rem;
+    margin-left: 18px;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+.site-nav a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    text-align: center;
+    padding: 56px 20px 32px;
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    color: var(--text);
+    margin-bottom: 6px;
+}
+
+.effective-date {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 22px;
+}
+
+.hero-text {
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 1.08rem;
+    color: var(--text);
+}
+
+.hero-text strong {
+    color: var(--primary-dark);
+}
+
+/* ---------- Cards ---------- */
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 30px 34px;
+    margin-bottom: 22px;
+}
+
+.card h2 {
+    font-size: 1.35rem;
+    color: var(--primary-dark);
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent-bg);
+}
+
+.card h3 {
+    font-size: 1.08rem;
+    margin: 18px 0 6px;
+    color: var(--text);
+}
+
+.card p {
+    margin-bottom: 12px;
+}
+
+.card ul {
+    margin: 0 0 12px 22px;
+}
+
+.card li {
+    margin-bottom: 8px;
+}
+
+.card a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Highlight notice ---------- */
+.notice {
+    background: var(--accent-bg);
+    border-left: 4px solid var(--primary);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-top: 10px;
+    font-size: 0.97rem;
+}
+
+/* ---------- Permission items ---------- */
+.perm-item {
+    padding: 8px 0 4px;
+}
+
+.perm-item + .perm-item {
+    border-top: 1px dashed var(--border);
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+    text-align: center;
+    padding: 30px 0 40px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        padding: 22px 20px;
+    }
+
+    .site-nav {
+        display: none;
+    }
+}
